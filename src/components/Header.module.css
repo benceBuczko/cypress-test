@@ -1,0 +1,9 @@
+.nav {
+    padding: 0.5em 3em;
+    background-color: var(--grey-background-color);
+    font-weight: 500;
+    box-shadow: 0px 1px 1px var(--grey-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
