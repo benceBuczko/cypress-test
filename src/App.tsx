@@ -1,5 +1,5 @@
 import './App.css';
-import { BlogPostList } from './components/BlogPostList';
+import { Outlet } from 'react-router-dom';
 import { Header } from './components/Header';
 
 function App() {
@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="content">
-        <BlogPostList />
-      </div>
+      <section className="content">
+        <Outlet />
+      </section>
     </div>
   )
 }

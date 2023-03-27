@@ -1,0 +1,10 @@
+.card {
+    width: 50%;
+    min-width: 300px;
+    min-height: 100px;
+    background-color: var(--grey-background-color);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 1.5px 1.5px 2px #928888;
+}

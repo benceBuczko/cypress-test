@@ -1,8 +1,6 @@
-import { BlogPost } from "../interfaces/BlogpPost";
-import { BlogPostCard } from "./BlogPostCard";
-import classes from './BlogPostList.module.css';
+import { createContext } from "react";
 
-const blogPosts: BlogPost[] = [
+export const BlogPostContext = createContext([
     {
         id: '1',
         title: 'Super Post',
@@ -17,14 +15,4 @@ const blogPosts: BlogPost[] = [
         creationDate: new Date('2021-01-16'),
         modifiedDate: new Date('2021-01-16'),
     }
-]
-
-export const BlogPostList = () => {
-    return (
-        <div className={classes.container}>
-            {blogPosts.map(blogPost => (
-                <BlogPostCard key={blogPost.id} blogPost={blogPost}/>
-            ))}
-        </div>
-    )
-};
+]);
