@@ -5,7 +5,7 @@ export const Header = () => {
     return (
         <header>
             <nav className={classes.nav}>
-                <Link to={'/'}>Home</Link>
+                <Link className={classes.link} to={'/'}>Home</Link>
                 <Link to={'/new'}><button>+ New Post</button></Link>
             </nav>
         </header>

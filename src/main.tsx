@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import { BlogPostContext } from './context/blogPostsContext'
 import './index.css'
-import { blogPostLoader, BlogPostPage } from './pages/BlogPost/BlogPostPage'
+import { BlogPostPage } from './pages/BlogPost/BlogPostPage'
 import { BlogPostList } from './pages/BlogPosts/BlogPostList'
 import { NewBlogPost } from './pages/NewBlogPost/NewBlogPost'
 

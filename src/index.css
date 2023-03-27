@@ -13,6 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --grey-background-color: #726a6a;
+  --color: rgb(255, 255, 255)
 }
 
 a {

@@ -7,3 +7,23 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.link {
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  
+.link:hover::after{
+    width: 100%;
+    left: 0;
+}
