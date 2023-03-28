@@ -3,7 +3,7 @@ import { ReactNode, FC } from 'react';
 
 export const Card: FC<{ children?: ReactNode }> = ({ children }) => {
     return (
-        <article className={classes.card}>
+        <article className={classes.card} data-testid="card">
             {children}
         </article>
     )

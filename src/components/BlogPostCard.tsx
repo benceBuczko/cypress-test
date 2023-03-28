@@ -9,7 +9,7 @@ interface BlogPostCardProps {
 
 const dateTimeFormat = Intl.DateTimeFormat();
 
-export const BlogPostCard = ({ blogPost: { title, content, creationDate, id}, shrinked = true }: BlogPostCardProps) => {
+export const BlogPostCard = ({ blogPost: { title, content, creationDate}, shrinked = true }: BlogPostCardProps) => {
     return (
         <Card>
             <div className={classes.header}>
