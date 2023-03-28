@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { BlogPostCard } from "../../components/BlogPostCard";
-import { BlogPostContext } from "../../context/blogPostsContext";
+import { BlogPostContext } from "../../context/BlogPostsContext";
 
 export const BlogPostPage = () => {
-    const blogPosts = useContext(BlogPostContext);
+    const { blogPosts } = useContext(BlogPostContext);
     const { blogPostId } = useParams();
 
     const blogPost = blogPosts.find(blogPost => blogPost.id === blogPostId);

@@ -1,0 +1,13 @@
+.form, label {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 1em 0;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
